@@ -32,4 +32,11 @@ public interface IMathMethodsService
     /// <param name="b"></param>
     /// <returns></returns>
     decimal DivisionNumber(int a, int b);
+
+    /// <summary>
+    /// Find avarage in the collection
+    /// </summary>
+    /// <param name="nums"></param>
+    /// <returns></returns>
+    decimal FindAvarage(params int[] nums);
 }

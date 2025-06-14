@@ -50,4 +50,21 @@ public class MathMetodsService : IMathMethodsService
     {
         return (decimal)a / b;
     }
+
+    /// <summary>
+    /// Find avarage in the collection
+    /// </summary>
+    /// <param name="nums"></param>
+    /// <returns></returns>
+    public decimal FindAvarage(params int[] nums)
+    {
+        var sum = 0;
+        var listLength = nums.Count();
+        foreach (var num in nums)
+        {
+            sum += num;
+        }
+        var res = (decimal)sum / listLength;
+        return res;
+    }
 }
