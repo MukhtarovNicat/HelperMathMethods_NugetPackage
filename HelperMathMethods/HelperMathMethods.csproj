@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<NoWarn>$(NoWarn);1591</NoWarn>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<PackageId>HelperMathMethods</PackageId>
+		<Title>Include Service about o math</Title>
+		<Version>1.2.1</Version>
+		<Authors>Nicat Mukhtarov</Authors>
+		<Company>Mukhtarovs</Company>
+		<Product />
+		<Description>A helper library that includes basic math operations for .NET applications.</Description>
+		<Copyright>Copyright Nicat</Copyright>
+		<PackageIcon>calculator.png</PackageIcon>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageTags>.net math interface</PackageTags>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\..\..\Downloads\calculator.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.2" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
+</Project>
