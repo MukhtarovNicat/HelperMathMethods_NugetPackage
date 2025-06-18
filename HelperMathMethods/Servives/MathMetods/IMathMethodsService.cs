@@ -39,4 +39,11 @@ public interface IMathMethodsService
     /// <param name="nums"></param>
     /// <returns></returns>
     decimal FindAvarage(params int[] nums);
+
+    /// <summary>
+    /// Determines whether the specified integer is an odd number.
+    /// </summary>
+    /// <param name="number"></param>
+    /// <returns></returns>
+    bool IsOdd(int number);
 }

@@ -67,4 +67,22 @@ public class MathMetodsService : IMathMethodsService
         var res = (decimal)sum / listLength;
         return res;
     }
+
+    /// <summary>
+    /// Determines whether the specified integer is an odd number.
+    /// </summary>
+    /// <param name="number"></param>
+    /// <returns></returns>
+    /// <exception cref="Exception"></exception>
+    public bool IsOdd(int number)
+    {
+        if (number <= 0) throw new Exception("Must be grather than 0");
+
+        bool isOdd = false;
+
+        if (number % 2 == 0)
+            isOdd = true;
+
+        return isOdd;
+    }
 }
