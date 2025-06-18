@@ -69,12 +69,12 @@ public class MathMetodsService : IMathMethodsService
     }
 
     /// <summary>
-    /// Determines whether the specified integer is an odd number.
+    /// Determines whether the specified integer is an even number.
     /// </summary>
     /// <param name="number"></param>
     /// <returns></returns>
     /// <exception cref="Exception"></exception>
-    public bool IsOdd(int number)
+    public bool IsEven(int number)
     {
         if (number <= 0) throw new Exception("Must be grather than 0");
 
@@ -84,5 +84,22 @@ public class MathMetodsService : IMathMethodsService
             isOdd = true;
 
         return isOdd;
+    }
+
+    /// <summary>
+    /// Returns a collection containing only the even numbers from the specified input collection.
+    /// </summary>
+    /// <param name="numbers"></param>
+    /// <returns></returns>
+    public ICollection<int> FindEvenNumbers(ICollection<int> numbers)
+    {
+        ICollection<int>? oddNumbers = new List<int>();
+
+        if (numbers.Count > 0)
+            foreach (var num in numbers)
+                if (num % 2 == 0)
+                    oddNumbers.Add(num);
+
+        return oddNumbers;
     }
 }

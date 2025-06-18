@@ -9,7 +9,7 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<PackageId>HelperMathMethods</PackageId>
 		<Title>Include Service about o math</Title>
-		<Version>1.4.1</Version>
+		<Version>1.5.2</Version>
 		<Authors>Nicat Mukhtarov</Authors>
 		<Company>Mukhtarovs</Company>
 		<Product />

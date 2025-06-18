@@ -41,9 +41,16 @@ public interface IMathMethodsService
     decimal FindAvarage(params int[] nums);
 
     /// <summary>
-    /// Determines whether the specified integer is an odd number.
+    /// Determines whether the specified integer is an even number.
     /// </summary>
     /// <param name="number"></param>
     /// <returns></returns>
-    bool IsOdd(int number);
+    bool IsEven(int number);
+
+    /// <summary>
+    /// Returns a collection containing only the even numbers from the specified input collection.
+    /// </summary>
+    /// <param name="numbers"></param>
+    /// <returns></returns>
+    ICollection<int> FindEvenNumbers(ICollection<int> numbers);
 }
