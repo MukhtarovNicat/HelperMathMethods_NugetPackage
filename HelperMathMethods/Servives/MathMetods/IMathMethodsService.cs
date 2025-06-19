@@ -61,4 +61,19 @@ public interface IMathMethodsService
     /// <param name="numbers"></param>
     /// <returns></returns>
     decimal FindFactorial(ICollection<decimal> numbers);
+
+    /// <summary>
+    /// Sorts the given collection of integers in descending order
+    /// and returns the specified number of largest elements from the top of the sorted list.
+    /// </summary>
+    /// <param name="numbers">The collection of integers to process.</param>
+    /// <param name="count">The number of top (largest) values to return.</param>
+    /// <returns>
+    /// A collection containing the largest <paramref name="count"/> numbers from the input list, sorted in descending order.
+    /// </returns>
+    /// <remarks>
+    /// The method uses a simple in-place sorting algorithm (bubble sort) to order the numbers from highest to lowest
+    /// before selecting the top <paramref name="count"/> items.
+    /// </remarks>
+    ICollection<int> TakeTopNumbers(ICollection<int> numbers, int count);
 }

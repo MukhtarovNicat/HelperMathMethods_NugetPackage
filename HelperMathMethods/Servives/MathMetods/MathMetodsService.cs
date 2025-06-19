@@ -120,4 +120,35 @@ public class MathMetodsService : IMathMethodsService
 
         return factorial;
     }
+
+    /// <summary>
+    /// Sorts the given collection of integers in descending order
+    /// and returns the specified number of largest elements from the top of the sorted list.
+    /// </summary>
+    /// <param name="numbers">The collection of integers to process.</param>
+    /// <param name="count">The number of top (largest) values to return.</param>
+    /// <returns>
+    /// A collection containing the largest <paramref name="count"/> numbers from the input list, sorted in descending order.
+    /// </returns>
+    /// <remarks>
+    /// The method uses a simple in-place sorting algorithm (bubble sort) to order the numbers from highest to lowest
+    /// before selecting the top <paramref name="count"/> items.
+    /// </remarks>
+    public ICollection<int> TakeTopNumbers(ICollection<int> numbers, int count)
+    {
+        var numList = numbers.ToList();
+        for (int i = 0; i < numList.Count - 1; i++)
+        {
+            for (int j = i + 1; j < numList.Count; j++)
+            {
+                if (numList[i] < numList[j])
+                {
+                    var temp = numList[i];
+                    numList[i] = numList[j];
+                    numList[j] = temp;
+                }
+            }
+        }
+        return numList.Take(count).ToList();
+    }
 }
