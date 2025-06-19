@@ -102,4 +102,22 @@ public class MathMetodsService : IMathMethodsService
 
         return oddNumbers;
     }
+
+    /// <summary>
+    /// Calculates the factorial of each number in the specified collection.
+    /// A collection of non-negative decimal numbers.
+    /// </summary>
+    /// <param name="numbers"></param>
+    /// <returns></returns>
+    public decimal FindFactorial(ICollection<decimal> numbers)
+    {
+        decimal factorial = 1;
+        foreach (var num in numbers)
+        {
+            if (num > 0)
+                factorial *= num;
+        }
+
+        return factorial;
+    }
 }

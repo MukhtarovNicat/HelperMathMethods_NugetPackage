@@ -53,4 +53,12 @@ public interface IMathMethodsService
     /// <param name="numbers"></param>
     /// <returns></returns>
     ICollection<int> FindEvenNumbers(ICollection<int> numbers);
+
+    /// <summary>
+    /// Calculates the factorial of each number in the specified collection.
+    /// A collection of non-negative decimal numbers.
+    /// </summary>
+    /// <param name="numbers"></param>
+    /// <returns></returns>
+    decimal FindFactorial(ICollection<decimal> numbers);
 }
