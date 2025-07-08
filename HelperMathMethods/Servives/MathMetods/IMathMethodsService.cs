@@ -76,4 +76,11 @@ public interface IMathMethodsService
     /// before selecting the top <paramref name="count"/> items.
     /// </remarks>
     ICollection<int> TakeTopNumbers(ICollection<int> numbers, int count);
+
+    /// <summary>
+    /// Generates the multiplication table for a given number from 1 to 10.
+    /// </summary>
+    /// <param name="num">The number for which the multiplication table will be generated.</param>
+    /// <returns>A list of strings, each representing one line of the multiplication table (e.g., "5 * 3 = 15").</returns>
+    List<string> MultiplicationTable(int num);
 }

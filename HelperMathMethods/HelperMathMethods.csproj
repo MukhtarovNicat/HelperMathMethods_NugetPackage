@@ -9,7 +9,7 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<PackageId>HelperMathMethods</PackageId>
 		<Title>Include Service about o math</Title>
-		<Version>1.7.2</Version>
+		<Version>1.8.2</Version>
 		<Authors>Nicat Mukhtarov</Authors>
 		<Company>Mukhtarovs</Company>
 		<Product />
@@ -18,6 +18,7 @@
 		<PackageIcon>calculator.png</PackageIcon>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageTags>.net math interface</PackageTags>
+		<PackageReleaseNotes>Added a new method `MultiplicationTable(int num)` that returns the multiplication table for a given number from 1 to 10.</PackageReleaseNotes>
 	</PropertyGroup>
 
 	<ItemGroup>

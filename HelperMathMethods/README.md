@@ -1,7 +1,7 @@
 ﻿
 # HelperMathMethods
 
-Paketi yükləmək üçün aşağıdakı commandı terminalda işlədin
+To install the package, run the following command in the terminal:
 
 ```bash
 NuGet\Install-Package HelperMathMethods
@@ -10,9 +10,9 @@ NuGet\Install-Package HelperMathMethods
 ## Usage
 
 ```csharp
-Program.cs içində servisi add etmək lazımdır və ya service registration içində
+You need to add the service in Program.cs or during service registration
 
-// Servisi DI container'a əlavə et
+// Register the service to the DI container
 builder.Services.AddMathService();
 ```
 

@@ -151,4 +151,20 @@ public class MathMetodsService : IMathMethodsService
         }
         return numList.Take(count).ToList();
     }
+
+    /// <summary>
+    /// Generates the multiplication table for a given number from 1 to 10.
+    /// </summary>
+    /// <param name="num">The number for which the multiplication table will be generated.</param>
+    /// <returns>A list of strings, each representing one line of the multiplication table (e.g., "5 * 3 = 15").</returns>
+    public List<string> MultiplicationTable(int num)
+    {
+        List<string> multiplication = new List<string>();
+        for (int i = 1; i <= 10; i++)
+        {
+            multiplication.Add($"{num}" + " * " + $"{i}" + " = " + $"{num * i}");
+        }
+
+        return multiplication;
+    }
 }
